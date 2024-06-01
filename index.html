@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unexca</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+    
+      
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+     
+    </style>
+</head>
+
+<body>
+    <div class="container">
+     
+        <img src ="./unexca.png"class="logo" width="100px" height="130px"> </img>
+   
+        <form action="generar_pdf.php" method="post">
+            <label for="nombres">Nombres:</label>
+            <input type="text" id="nombres" name="nombres" placeholder="Ingresa tu nombres" required>
+
+            <label for="nombres">Apellidos:</label>
+            <input type="text" id="nombres" name="nombres" placeholder="Ingresa tus apellidos" required>
+
+            <label for="nombres">Cedula:</label>
+            <input type="text" id="nombres" name="nombres" placeholder="Ingresa tu cedula" required>
+
+            <label for="nombres">Pnf:</label>
+            <input type="text" id="nombres" name="nombres" placeholder="Ingresa tu pnf" required>
+
+            <label for="nombres">Seccion:</label>
+            <input type="text" id="nombres" name="nombres" placeholder="Ingresa tu seccion" required>
+
+            <label for="nombres">Nucleo:</label>
+            <input type="text" id="nombres" name="nombres" placeholder="Ingresa tu nucleo" required>
+
+            <label for="nombres">Periodo:</label>
+            <input type="text" id="nombres" name="nombres" placeholder="Ingresa tu periodo" required>
+
+            <label for="nombres">Turno:</label>
+            <input type="text" id="nombres" name="nombres" placeholder="Ingresa tu turno" required>
+        
+            <button type="submit">Generar PDF</button>
+        </form>
+    </div>
+</body>
+
+</html>
